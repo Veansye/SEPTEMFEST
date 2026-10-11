@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SeptemFest • Calendar</title>
+  <script>try{var routeUrl=new URL(location.href);if(routeUrl.searchParams.has("__septemfest_navigation")){routeUrl.searchParams.delete("__septemfest_navigation");history.replaceState(history.state,"",routeUrl.href)}else{document.documentElement.dataset.pageLoading=""}}catch(error){document.documentElement.dataset.pageLoading=""}</script>
+  <link rel="icon" type="image/png" href="../images/Logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="../styles/calendar.css">
+</head>
+
+<body>
+  <div class="page-loader" id="pageLoader" role="status" aria-live="polite">
+    <div class="page-loader-content">
+      <img src="../images/Logo.png" alt="" width="64" height="48">
+      <span class="page-loader-label">SEPTEMFEST OF SAN MATEO</span>
+      <p>Getting the festival ready</p>
+      <span class="page-loader-track" aria-hidden="true"><span></span></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="SeptemFest Home">
+      <img class="brand-logo" src="../images/Logo.png" alt="SeptemFest logo" width="42" height="32">
+      <span class="brand-divider"></span>
+      <span class="brand-word">SeptemFest</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a class="active" href="./calendars.html">Calendar</a>
+      <a href="./products.html">Products</a>
+      <a href="./timeline.html">Timeline</a>
+      <a href="./landmark.html">Landmark</a>
+    </nav>
+  </header>
+
+  <main class="calendar-page">
+    <section class="calendar-intro wrap">
+      <div class="calendar-intro-copy">
+        <span class="mini-label">SAN MATEO, RIZAL</span>
+        <h1>Festival<br><span>calendar.</span></h1>
+        <p>Explore the full month of September. Highlighted dates open event details and photo previews.</p>
+      </div>
+      <div class="calendar-legend glass">
+        <span class="calendar-legend-dot" aria-hidden="true"></span>
+        <span>Highlighted dates have festival events</span>
+      </div>
+    </section>
+
+    <section class="month-calendar glass wrap" aria-labelledby="monthCalendarTitle">
+      <header class="month-calendar-header">
+        <div>
+          <span class="mini-label">A MONTH OF COMMUNITY</span>
+          <h2 id="monthCalendarTitle">September <span>2026</span></h2>
+        </div>
+        <span class="month-calendar-note">Select a highlighted date to explore</span>
+      </header>
+      <div class="month-calendar-weekdays" aria-hidden="true">
+        <span>Sunday</span><span>Monday</span><span>Tuesday</span><span>Wednesday</span>
+        <span>Thursday</span><span>Friday</span><span>Saturday</span>
+      </div>
+      <div class="month-calendar-grid" id="monthCalendarGrid" role="grid" aria-label="September 2026"></div>
+    </section>
+
+    <dialog class="calendar-event-dialog" id="calendarEventDialog" aria-labelledby="calendarDialogEventName">
+      <div class="calendar-dialog-card">
+        <button class="calendar-dialog-close" id="calendarDialogClose" type="button" aria-label="Close event details">×</button>
+        <div class="calendar-dialog-heading">
+          <span class="calendar-dialog-date" id="calendarDialogDate"></span>
+          <h2 id="calendarDialogEventName"></h2>
+        </div>
+        <div class="calendar-dialog-player">
+          <video id="calendarDialogVideo" controls playsinline preload="metadata" hidden></video>
+          <iframe id="calendarDialogYouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Event video" hidden></iframe>
+          <div class="calendar-dialog-gallery" id="calendarDialogGallery" hidden>
+            <img class="calendar-dialog-gallery-preview is-previous" id="calendarDialogGalleryPreviousImage" alt="" aria-hidden="true">
+            <img class="calendar-dialog-gallery-preview is-next" id="calendarDialogGalleryNextImage" alt="" aria-hidden="true">
+            <img id="calendarDialogGalleryImage" alt="">
+            <div class="calendar-dialog-gallery-controls">
+              <button class="calendar-carousel-button" id="calendarDialogGalleryPrevious" type="button" aria-label="Previous Pet Festival photo">‹</button>
+              <span id="calendarDialogGalleryCount" aria-live="polite"></span>
+              <button class="calendar-carousel-button" id="calendarDialogGalleryNext" type="button" aria-label="Next Pet Festival photo">›</button>
+            </div>
+          </div>
+          <div class="calendar-video-placeholder" id="calendarVideoPlaceholder">
+            <img id="calendarVideoPoster" alt="">
+            <span class="calendar-video-placeholder-shade"></span>
+            <span class="calendar-video-message">
+              <span class="calendar-video-play" aria-hidden="true">▶</span>
+              <strong>Video preview coming soon</strong>
+              <small>Event video will be added here.</small>
+            </span>
+          </div>
+        </div>
+        <div class="calendar-dialog-carousel" id="calendarDialogCarousel" hidden>
+          <button class="calendar-carousel-button" id="calendarPreviousEvent" type="button" aria-label="Previous September 9 event">‹</button>
+          <span id="calendarDialogEventCount"></span>
+          <button class="calendar-carousel-button" id="calendarNextEvent" type="button" aria-label="Next September 9 event">›</button>
+        </div>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>SeptemFest • Calendar</span>
+      <span>NEXUS • HOME TECH • TDB</span>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

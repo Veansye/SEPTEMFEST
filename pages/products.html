@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SeptemFest • Products</title>
+  <script>try{var routeUrl=new URL(location.href);if(routeUrl.searchParams.has("__septemfest_navigation")){routeUrl.searchParams.delete("__septemfest_navigation");history.replaceState(history.state,"",routeUrl.href)}else{document.documentElement.dataset.pageLoading=""}}catch(error){document.documentElement.dataset.pageLoading=""}</script>
+  <link rel="icon" type="image/png" href="../images/Logo.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="../styles/products.css">
+</head>
+
+<body class="products-page">
+  <div class="page-loader" id="pageLoader" role="status" aria-live="polite">
+    <div class="page-loader-content">
+      <img src="../images/Logo.png" alt="" width="64" height="48">
+      <span class="page-loader-label">SEPTEMFEST OF SAN MATEO</span>
+      <p>Getting the festival ready</p>
+      <span class="page-loader-track" aria-hidden="true"><span></span></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="SeptemFest Home">
+      <img class="brand-logo" src="../images/Logo.png" alt="SeptemFest logo" width="42" height="32">
+      <span class="brand-divider"></span>
+      <span class="brand-word">SeptemFest</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="./calendars.html">Calendar</a>
+      <a class="active" href="./products.html">Products</a>
+      <a href="./timeline.html">Timeline</a>
+      <a href="./landmark.html">Landmark</a>
+    </nav>
+  </header>
+
+  <main class="product-showcase" id="productShowcase" aria-label="Festival product preview">
+    <section class="product-details" aria-live="polite" aria-atomic="true">
+      <span class="product-eyebrow"><span></span> SAN MATEO KAKANIN COLLECTION</span>
+      <div class="product-category-row">
+        <p class="product-category" id="productCategory">FESTIVAL FAVORITE</p>
+        <span class="product-origin-mark">RIZAL · PH</span>
+      </div>
+      <h1 id="productTitle">Festival Bilao</h1>
+      <p class="product-description" id="productDescription">A colorful bilao made for sharing, filled with a little bit of everything the festival has to offer.</p>
+      <p class="product-note">A local taste, made to be shared.</p>
+      <div class="product-controls" aria-label="Product navigation">
+        <button class="slider-arrow" id="previousProduct" type="button" aria-label="Previous product">‹</button>
+        <button class="slider-arrow" id="nextProduct" type="button" aria-label="Next product">›</button>
+        <output class="product-counter" id="productCounter" aria-live="polite" aria-atomic="true"></output>
+      </div>
+    </section>
+
+    <div class="product-artwork">
+      <div class="featured-product" aria-hidden="true">
+        <span class="featured-product-glow"></span>
+        <span class="featured-product-halo"></span>
+        <span class="featured-product-orbit"></span>
+        <span class="featured-product-sparkle is-sparkle-one">✦</span>
+        <span class="featured-product-sparkle is-sparkle-two">✧</span>
+        <span class="featured-product-sparkle is-sparkle-three">✦</span>
+        <span class="featured-product-sparkle is-sparkle-four">✧</span>
+        <span class="featured-product-sparkle is-sparkle-five">·</span>
+        <span class="featured-product-sparkle is-sparkle-six">·</span>
+        <img class="featured-product-image" id="featuredProductImage" alt="">
+      </div>
+
+      <div class="product-wheel" id="productWheel" role="group" aria-label="Select a product from the bilao"></div>
+    </div>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

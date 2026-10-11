@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SeptemFest • Landmark</title>
+  <script>try{var routeUrl=new URL(location.href);if(routeUrl.searchParams.has("__septemfest_navigation")){routeUrl.searchParams.delete("__septemfest_navigation");history.replaceState(history.state,"",routeUrl.href)}else{document.documentElement.dataset.pageLoading=""}}catch(error){document.documentElement.dataset.pageLoading=""}</script>
+  <link rel="icon" type="image/png" href="../images/Logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="../styles/landmark.css">
+</head>
+
+<body class="landmark-page">
+  <div class="page-loader" id="pageLoader" role="status" aria-live="polite">
+    <div class="page-loader-content">
+      <img src="../images/Logo.png" alt="" width="64" height="48">
+      <span class="page-loader-label">SEPTEMFEST OF SAN MATEO</span>
+      <p>Getting the festival ready</p>
+      <span class="page-loader-track" aria-hidden="true"><span></span></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="SeptemFest Home">
+      <img class="brand-logo" src="../images/Logo.png" alt="SeptemFest logo" width="42" height="32">
+      <span class="brand-divider"></span>
+      <span class="brand-word">SeptemFest</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="./calendars.html">Calendar</a>
+      <a href="./products.html">Products</a>
+      <a href="./timeline.html">Timeline</a>
+      <a class="active" href="./landmark.html">Landmark</a>
+    </nav>
+  </header>
+
+  <main class="landmark-main wrap">
+    <section class="landmark-intro" aria-labelledby="landmarkTitle">
+      <span class="mini-label">A LITTLE ADVENTURE AROUND TOWN</span>
+      <h1 id="landmarkTitle">Explore San Mateo<span>.</span></h1>
+      <p>Choose a stop on the festival trail. Your little guide will walk there while you discover the places behind the celebration.</p>
+    </section>
+
+    <section class="landmark-explorer glass" aria-labelledby="mapTitle">
+      <div class="landmark-section-heading">
+        <div>
+          <span class="mini-label">YOUR SEPTEMFEST ADVENTURE</span>
+          <h2 id="mapTitle">Pick a place to visit</h2>
+        </div>
+        <span class="landmark-map-badge"><span aria-hidden="true">✦</span> 4 STOPS TO EXPLORE</span>
+      </div>
+
+      <div class="landmark-map-frame">
+        <div class="landmark-map" id="landmarkMap">
+          <img class="landmark-map-image" src="../images/Map.png" alt="Custom illustrated map of San Mateo showing the National Shrine of Our Lady of Aranzazu, SM San Mateo, Municipal Plaza, and Timberland Heights">
+          <svg class="landmark-map-art" viewBox="0 0 1100 620" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="landMapGround" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#d9f5ce"></stop>
+                <stop offset="1" stop-color="#b8e7ab"></stop>
+              </linearGradient>
+              <linearGradient id="landMapRiver" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#83e3ef"></stop>
+                <stop offset="1" stop-color="#5dbde0"></stop>
+              </linearGradient>
+              <pattern id="landMapDots" width="34" height="34" patternUnits="userSpaceOnUse">
+                <circle cx="3" cy="3" r="1.5" fill="#599b61" opacity=".12"></circle>
+              </pattern>
+            </defs>
+            <rect width="1100" height="620" fill="url(#landMapGround)"></rect>
+            <rect width="1100" height="620" fill="url(#landMapDots)"></rect>
+            <path d="M875-25 C828 76 927 115 867 207 S930 360 847 425 835 554 920 660" fill="none" stroke="url(#landMapRiver)" stroke-width="62" stroke-linecap="round"></path>
+            <path d="M875-25 C828 76 927 115 867 207 S930 360 847 425 835 554 920 660" fill="none" stroke="#e5fbff" stroke-width="5" stroke-dasharray="2 13" stroke-linecap="round" opacity=".8"></path>
+
+            <g fill="#a5d991" opacity=".85">
+              <ellipse cx="178" cy="128" rx="118" ry="68"></ellipse>
+              <ellipse cx="524" cy="112" rx="132" ry="64"></ellipse>
+              <ellipse cx="1014" cy="150" rx="106" ry="86"></ellipse>
+              <ellipse cx="182" cy="535" rx="112" ry="58"></ellipse>
+              <ellipse cx="615" cy="510" rx="125" ry="55"></ellipse>
+            </g>
+            <g fill="#76b976">
+              <circle cx="82" cy="113" r="20"></circle><circle cx="104" cy="108" r="15"></circle>
+              <circle cx="247" cy="80" r="18"></circle><circle cx="267" cy="78" r="13"></circle>
+              <circle cx="465" cy="104" r="19"></circle><circle cx="487" cy="98" r="14"></circle>
+              <circle cx="645" cy="105" r="18"></circle><circle cx="665" cy="100" r="14"></circle>
+              <circle cx="1015" cy="84" r="20"></circle><circle cx="1038" cy="80" r="14"></circle>
+              <circle cx="101" cy="548" r="21"></circle><circle cx="126" cy="544" r="15"></circle>
+              <circle cx="647" cy="555" r="20"></circle><circle cx="672" cy="551" r="14"></circle>
+            </g>
+            <g fill="#fff2be" stroke="#e9c878" stroke-width="4">
+              <rect x="235" y="195" width="82" height="54" rx="11" transform="rotate(-8 276 222)"></rect>
+              <rect x="451" y="177" width="68" height="47" rx="10" transform="rotate(7 485 200)"></rect>
+              <rect x="642" y="152" width="85" height="52" rx="11" transform="rotate(-8 684 178)"></rect>
+              <rect x="155" y="360" width="77" height="50" rx="10" transform="rotate(8 193 385)"></rect>
+              <rect x="585" y="388" width="78" height="53" rx="10" transform="rotate(-5 624 414)"></rect>
+              <rect x="724" y="240" width="62" height="45" rx="10" transform="rotate(8 755 262)"></rect>
+              <rect x="374" y="470" width="78" height="49" rx="10" transform="rotate(-6 413 494)"></rect>
+            </g>
+
+            <path id="landmarkWalkingTrail" d="M230 365 C310 304 410 239 490 258 C550 225 610 207 670 208 S790 239 860 245 C830 270 770 295 710 322 S530 390 370 435" fill="none" stroke="#c79758" stroke-width="42" stroke-linecap="round"></path>
+            <path d="M106 460 C190 453 227 386 338 363 S490 262 560 276 S696 385 789 390 S897 479 989 481" fill="none" stroke="#fff3d5" stroke-width="31" stroke-linecap="round"></path>
+            <path d="M106 460 C190 453 227 386 338 363 S490 262 560 276 S696 385 789 390 S897 479 989 481" fill="none" stroke="#d8bd84" stroke-width="3" stroke-dasharray="14 16" stroke-linecap="round"></path>
+
+            <g class="landmark-map-decor" aria-hidden="true">
+              <g transform="translate(105 315)">
+                <path d="M6 42 48 8l42 34v49H6z" fill="#f58d78" stroke="#b95e5c" stroke-width="5" stroke-linejoin="round"></path>
+                <path d="M0 44 48 3l48 41" fill="none" stroke="#9e5261" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <rect x="18" y="48" width="60" height="37" rx="5" fill="#fff2d8"></rect>
+                <path d="M39 85V65a9 9 0 0 1 18 0v20" fill="#8a6abf"></path>
+                <path d="M12 40V8h18v17M21 1v-13m-6 7h12" fill="none" stroke="#a55659" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle cx="21" cy="55" r="4" fill="#73b5d0"></circle><circle cx="69" cy="55" r="4" fill="#73b5d0"></circle>
+              </g>
+              <g transform="translate(235 150)">
+                <path d="m0 94 57-77 49 61 43-47 67 63z" fill="#82bd77" stroke="#558f60" stroke-width="5" stroke-linejoin="round"></path>
+                <path d="m38 43 19-26 18 23-13-5-8 9-7-8zM132 63l25-32 27 38-19-8-8 8-10-10z" fill="#fff6dd"></path>
+                <path d="M23 94h181" stroke="#518d5b" stroke-width="9" stroke-linecap="round"></path>
+                <path d="M15 86c15-13 26-14 39-6M156 85c14-12 27-12 41-4" fill="none" stroke="#a9d790" stroke-width="7" stroke-linecap="round"></path>
+              </g>
+              <g transform="translate(450 72)">
+                <ellipse cx="68" cy="66" rx="87" ry="47" fill="#f4dda0" stroke="#d0ad68" stroke-width="5"></ellipse>
+                <ellipse cx="68" cy="66" rx="68" ry="32" fill="#fff1c8"></ellipse>
+                <path d="M22 65h92M68 35v62M35 44l66 43m0-43L35 87" stroke="#dfc782" stroke-width="3" stroke-linecap="round"></path>
+                <circle cx="68" cy="66" r="13" fill="#8bd5e3" stroke="#fff" stroke-width="5"></circle>
+                <path d="M5 105h128" stroke="#c59a62" stroke-width="7" stroke-linecap="round"></path>
+                <path d="M-4 103v-22m0 0 13 9m121 13V81m0 0-13 9" fill="none" stroke="#9b7752" stroke-width="5" stroke-linecap="round"></path>
+              </g>
+              <g transform="translate(665 68)">
+                <path d="M0 32 73 0l73 32" fill="#ffcf62" stroke="#bd8739" stroke-width="5" stroke-linejoin="round"></path>
+                <rect x="9" y="31" width="128" height="70" rx="8" fill="#fff3cf" stroke="#d4a74b" stroke-width="5"></rect>
+                <rect x="22" y="45" width="102" height="12" rx="6" fill="#76c8dc"></rect>
+                <rect x="23" y="65" width="24" height="30" rx="3" fill="#b4e0e8"></rect>
+                <rect x="56" y="65" width="24" height="30" rx="3" fill="#b4e0e8"></rect>
+                <rect x="89" y="65" width="24" height="30" rx="3" fill="#b4e0e8"></rect>
+                <rect x="57" y="17" width="32" height="22" rx="6" fill="#fff" stroke="#e3ae49" stroke-width="3"></rect>
+                <text x="73" y="33" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#4976a5">SM</text>
+              </g>
+              <g transform="translate(835 210)">
+                <path d="M0 26 59 0l59 26" fill="#f0a26c" stroke="#a96757" stroke-width="5" stroke-linejoin="round"></path>
+                <path d="M12 27v61m94-61v61" stroke="#8f695b" stroke-width="6"></path>
+                <path d="M4 88h110" stroke="#a96757" stroke-width="7" stroke-linecap="round"></path>
+                <path d="M30 37v38m57-38v38" stroke="#74bed5" stroke-width="4"></path>
+                <path d="M30 37h17v13H30m40-13h17v13H70" fill="none" stroke="#fff4d9" stroke-width="4"></path>
+                <circle cx="58" cy="61" r="8" fill="#f2c75e"></circle>
+              </g>
+              <g fill="#fff" opacity=".84">
+                <path d="M76 280c0-14 11-25 25-25 10 0 19 6 23 15 3-2 7-3 11-3 12 0 21 9 21 20H76z"></path>
+                <path d="M690 82c0-12 10-22 22-22 9 0 17 5 20 13 3-2 6-3 10-3 10 0 19 8 19 18h-71z"></path>
+                <path d="M932 336c0-11 9-20 20-20 8 0 15 5 18 12 3-2 6-3 9-3 10 0 17 8 17 17h-64z"></path>
+              </g>
+            </g>
+
+          </svg>
+
+          <svg class="landmark-map-art landmark-map-character-layer" viewBox="0 0 1100 620" aria-hidden="true" focusable="false">
+            <g id="landmarkWalker" class="landmark-walker">
+              <image class="landmark-walker-image" href="../images/Navigator.png" x="-31" y="-61" width="62" height="62" preserveAspectRatio="xMidYMax meet"></image>
+            </g>
+          </svg>
+
+          <div class="landmark-map-pins" id="landmarkMapPins" aria-label="Map stops"></div>
+        </div>
+        <div class="landmark-map-caption">
+          <span><span class="landmark-live-dot" aria-hidden="true"></span> Tap a pin or a stop below to walk there</span>
+          <span>Illustrated map · not to scale</span>
+        </div>
+      </div>
+
+      <div class="landmark-stop-layout">
+        <div class="landmark-stop-picker">
+          <h3>Festival trail</h3>
+          <ol class="landmark-stop-list" id="landmarkStopList" aria-label="Choose a place on the festival trail"></ol>
+        </div>
+        <article class="landmark-selected-stop" id="landmarkSelectedStop" aria-live="polite">
+          <img id="landmarkStopImage" src="../images/Landmark.jpg" alt="Our Lady of Aranzazu Church in San Mateo">
+          <div class="landmark-selected-copy">
+            <span class="mini-label" id="landmarkStopEyebrow">STOP 01 · TOWN LANDMARK</span>
+            <h3 id="landmarkStopName">Our Lady of Aranzazu Church</h3>
+            <p id="landmarkStopDescription">A much-loved historic church and the heart of San Mateo's September celebrations.</p>
+            <span class="landmark-stop-location" id="landmarkStopLocation">National Shrine of Our Lady of Aranzazu, San Mateo, Rizal</span>
+            <a class="landmark-directions" id="landmarkDirections" href="https://www.google.com/maps/search/?api=1&amp;query=National%20Shrine%20of%20Our%20Lady%20of%20Aranzazu%2C%20San%20Mateo%2C%20Rizal" target="_blank" rel="noopener noreferrer">Find directions <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="landmark-contact glass" aria-labelledby="landmarkContactTitle">
+      <div class="landmark-contact-heading">
+        <span class="mini-label">NEED A HAND PLANNING YOUR VISIT?</span>
+        <h2 id="landmarkContactTitle">Stay in the loop.</h2>
+        <p>Contact the Municipal Mayor’s Office or visit the municipality’s official website for information.</p>
+      </div>
+      <a class="landmark-contact-card landmark-contact-website" href="https://sanmateo.gov.ph" target="_blank" rel="noopener noreferrer">
+        <span class="landmark-contact-icon" aria-hidden="true">↗</span>
+        <span><small>OFFICIAL MUNICIPAL WEBSITE</small><strong>sanmateo.gov.ph</strong></span>
+      </a>
+      <a class="landmark-contact-card landmark-contact-phone" href="tel:+63282978100">
+        <span class="landmark-contact-icon" aria-hidden="true">☎</span>
+        <span><small>MUNICIPAL MAYOR’S OFFICE · LOCAL 150</small><strong>(02) 8297-8100</strong></span>
+      </a>
+      <div class="landmark-social-card">
+        <span class="landmark-contact-icon" aria-hidden="true">✦</span>
+        <span><small>FESTIVAL CHANNELS · AS PRINTED ON THE FESTIVAL ARTWORK</small><strong>Facebook · SanMateoRizalSeptemberfest</strong><strong>YouTube · @SanMateoRizal</strong><strong>Instagram · San Mateo Rizal Community</strong></span>
+      </div>
+      <a class="landmark-contact-source" href="https://www.sanmateo.gov.ph/officeofthemayor.html" target="_blank" rel="noopener noreferrer">Phone number from the official Municipal Mayor’s Office directory ↗</a>
+    </section>
+
+    <section class="landmark-credits" aria-labelledby="landmarkCreditsTitle">
+      <span class="mini-label">MADE WITH COMMUNITY SPIRIT</span>
+      <h2 id="landmarkCreditsTitle">Image credits</h2>
+      <p>Festival photos are local project assets. Photographer and original publication details were not included with the image files.</p>
+      <ul class="landmark-credit-list">
+        <li><strong>Church</strong><span>images/Landmark.jpg</span></li>
+        <li><strong>BidaBike Fest</strong><span>images/Second.JPG</span></li>
+        <li><strong>Street parade</strong><span>images/First.jpg</span></li>
+        <li><strong>Mr. &amp; Ms. San Mateo</strong><span>images/Third.JPG</span></li>
+        <li><strong>Pet Festival</strong><span>images/Fifth.JPG</span></li>
+      </ul>
+      <h3 class="landmark-credit-subheading">Product images</h3>
+      <ul class="landmark-credit-list landmark-product-credit-list">
+        <li><strong>Puto</strong><span>images/Puto.png</span></li>
+        <li><strong>Kutsinta</strong><span>images/Kutsinta.png</span></li>
+        <li><strong>Sapin-sapin</strong><span>images/Sapin.png</span></li>
+        <li><strong>Suman</strong><span>images/Suman.png</span></li>
+        <li><strong>Bibingka</strong><span>images/Bibingka.png</span></li>
+        <li><strong>Palitaw</strong><span>images/Palitaw.png</span></li>
+        <li><strong>Biko</strong><span>images/Biko.png</span></li>
+        <li><strong>Puto bumbong</strong><span>images/Bumbong.png</span></li>
+      </ul>
+      <p class="landmark-credit-note">Product image creator, publication, and license details were not included with the project assets. Add the original attribution details before publishing.</p>
+      <p class="landmark-credit-note">The illustrated trail map is custom artwork and is not a geographic survey or navigation map.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>SeptemFest • Explore San Mateo</span>
+      <span>NEXUS • HOME TECH • TDB</span>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Scroll back to top"><span>↑</span></button>
+  <script src="../script.js"></script>
+</body>
+</html>

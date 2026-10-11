@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SeptemFest of San Mateo." />
+
+  <title>SeptemFest • Home</title>
+  <script>try{var routeUrl=new URL(location.href);if(routeUrl.searchParams.has("__septemfest_navigation")){routeUrl.searchParams.delete("__septemfest_navigation");history.replaceState(history.state,"",routeUrl.href)}else{document.documentElement.dataset.pageLoading=""}}catch(error){document.documentElement.dataset.pageLoading=""}</script>
+  <link rel="icon" type="image/png" href="./images/Logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/home.css">
+</head>
+
+<body>
+  <div class="page-loader" id="pageLoader" role="status" aria-live="polite">
+    <div class="page-loader-content">
+      <img src="./images/Logo.png" alt="" width="64" height="48">
+      <span class="page-loader-label">SEPTEMFEST OF SAN MATEO</span>
+      <p>Getting the festival ready</p>
+      <span class="page-loader-track" aria-hidden="true"><span></span></span>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="./index.html" aria-label="SeptemFest Home">
+      <img class="brand-logo" src="./images/Logo.png" alt="SeptemFest logo" width="42" height="32">
+      <span class="brand-divider"></span>
+      <span class="brand-word">SeptemFest</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="./index.html">Home</a>
+      <a href="./pages/calendars.html">Calendar</a>
+      <a href="./pages/products.html">Products</a>
+      <a href="./pages/timeline.html">Timeline</a>
+      <a href="./pages/landmark.html">Landmark</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-background" id="heroBackground"></div>
+      <div class="hero-light hero-light--left"></div>
+      <div class="hero-light hero-light--right"></div>
+      <svg class="hero-wave" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 108 C235 72 430 78 625 98 C825 119 1035 74 1230 78 C1320 80 1385 91 1440 99 L1440 220 L0 220 Z" fill="#ffffff" />
+        <path class="hero-wave-blend" d="M0 108 C235 72 430 78 625 98 C825 119 1035 74 1230 78 C1320 80 1385 91 1440 99" />
+        <path class="hero-wave-glow" d="M0 108 C235 72 430 78 625 98 C825 119 1035 74 1230 78 C1320 80 1385 91 1440 99" />
+      </svg>
+
+      <div class="wrap hero-inner">
+        <div class="hero-copy glass">
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span>
+            <span id="slideMeta">FESTIVAL ACTIVITY • 01</span>
+          </div>
+
+          <p class="hero-kicker" id="slideKicker">Welcome to</p>
+
+          <h1 id="slideTitle">
+            SAN MATEO,<br>RIZALEÑO!
+          </h1>
+
+          <button class="primary-btn" id="viewActivityBtn" type="button">
+            <span id="viewActivityLabel">View Landmark</span>
+            <span class="btn-arrow">→</span>
+          </button>
+        </div>
+
+        <aside class="next-preview glass" aria-live="polite" aria-label="Next slideshow item">
+          <div class="next-preview-image">
+            <img id="nextImage" src="./images/Second.JPG" alt="Preview of the next festival activity">
+          </div>
+
+          <div class="next-preview-copy">
+            <span class="next-label">UP NEXT</span>
+            <strong id="nextTitle">Lantern Parade</strong>
+            <small id="nextDate">SEPTEMBER 21</small>
+          </div>
+        </aside>
+
+        <div class="slider-controls" aria-label="Slideshow controls">
+          <button class="slider-arrow" id="prevSlide" type="button" aria-label="Previous slide">‹</button>
+          <div class="dots" id="dots"></div>
+          <button class="slider-arrow" id="nextSlide" type="button" aria-label="Next slide">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-section">
+      <div class="section-heading intro-heading">
+        <div>
+          <span class="mini-label">THE FESTIVAL AT A GLANCE</span>
+          <h2>A celebration rooted<br>in San Mateo.</h2>
+        </div>
+
+        <div class="intro-summary">
+          <p>
+            Every September, San Mateo comes together for colorful parades, cultural performances, local flavors, and shared traditions. Discover what makes these festival days meaningful to the whole community.
+          </p>
+          <div class="intro-details" aria-label="Festival details">
+            <span>5 FEATURED ACTIVITIES & 1 LANDMARK</span>
+            <span>SEPTEMBER 7, 9, 13, and 26</span>
+            <span>SAN MATEO, RIZAL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="purpose-statement" aria-labelledby="purposeStatementTitle">
+      <div class="purpose-statement-card purpose-glass-card">
+        <div class="purpose-statement-heading">
+          <span class="mini-label">WHY THIS WEBSITE EXISTS</span>
+          <h2 id="purposeStatementTitle">To celebrate the spirit of San Mateo.</h2>
+        </div>
+        <div class="purpose-statement-details">
+          <p>
+            Welcome to our website dedicated to the Kakanin Festival of San Mateo, Rizal, a celebration of Filipino culture, tradition, and the beloved local delicacies that bring the community together.
+            Through this website, we aim to showcase the beauty of the festival and help visitors appreciate how kakanin is more than just food, it is a part of our identity, tradition, and community.
+          </p>
+          <div class="purpose-values" aria-label="Website goals">
+            <span>Celebrate local culture</span>
+            <span>Make visits easier to plan</span>
+            <span>Share community stories</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="events-section wrap" id="featuredEvents">
+      <div class="section-heading section-heading--compact">
+        <div>
+          <span class="mini-label">FEATURED ACTIVITIES</span>
+          <h2>See what's happening.</h2>
+        </div>
+      </div>
+
+      <div class="event-grid" id="eventGrid"></div>
+    </section>
+
+    <section class="purpose-section" aria-labelledby="purposeTitle">
+      <div class="purpose-panel purpose-glass-card">
+        <div class="purpose-copy">
+          <span class="mini-label">YOUR FESTIVAL GUIDE</span>
+          <h2 id="purposeTitle">A little more than a schedule.</h2>
+          <p>
+            Get ready for the festival with practical details and local discoveries. Explore what is happening, find a festival favorite, and learn more about the traditions and places that make San Mateo special.
+          </p>
+        </div>
+        <a class="purpose-visual" href="./pages/calendars.html" aria-label="Explore the festival calendar">
+          <img src="./images/First.jpg" alt="Festival performers and colorful decorations at the Street Parade">
+          <span class="purpose-visual-caption">
+            <small>COME CELEBRATE WITH US</small>
+            <strong>Find your festival moment</strong>
+          </span>
+          <span class="purpose-visual-arrow" aria-hidden="true">↗</span>
+        </a>
+        <nav class="purpose-links" aria-label="Explore the festival guide">
+          <a class="purpose-link" href="./pages/calendars.html">
+            <span class="purpose-link-number">01</span>
+            <span><strong>Plan your visit</strong><small>Dates, activities, and details</small></span>
+            <span class="purpose-link-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="purpose-link" href="./pages/products.html">
+            <span class="purpose-link-number">02</span>
+            <span><strong>Discover local finds</strong><small>Festival products and favorites</small></span>
+            <span class="purpose-link-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="purpose-link" href="./pages/timeline.html">
+            <span class="purpose-link-number">03</span>
+            <span><strong>Explore the story</strong><small>Festival traditions and history</small></span>
+            <span class="purpose-link-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="purpose-link" href="./pages/landmark.html">
+            <span class="purpose-link-number">04</span>
+            <span><strong>Visit the landmark</strong><small>Discover a place at the heart of town</small></span>
+            <span class="purpose-link-arrow" aria-hidden="true">→</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Scroll back to top">
+      <span>↑</span>
+    </button>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>SeptemFest • Home</span>
+      <span>NEXUS • HOME TECH • TDB</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

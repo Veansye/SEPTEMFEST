@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SeptemFest • Timeline</title>
+  <script>try{var routeUrl=new URL(location.href);if(routeUrl.searchParams.has("__septemfest_navigation")){routeUrl.searchParams.delete("__septemfest_navigation");history.replaceState(history.state,"",routeUrl.href)}else{document.documentElement.dataset.pageLoading=""}}catch(error){document.documentElement.dataset.pageLoading=""}</script>
+  <link rel="icon" type="image/png" href="../images/Logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="../styles/timeline.css">
+</head>
+
+<body class="history-page">
+  <div class="page-loader" id="pageLoader" role="status" aria-live="polite">
+    <div class="page-loader-content">
+      <img src="../images/Logo.png" alt="" width="64" height="48">
+      <span class="page-loader-label">SEPTEMFEST OF SAN MATEO</span>
+      <p>Getting the festival ready</p>
+      <span class="page-loader-track" aria-hidden="true"><span></span></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="SeptemFest Home">
+      <img class="brand-logo" src="../images/Logo.png" alt="SeptemFest logo" width="42" height="32">
+      <span class="brand-divider"></span>
+      <span class="brand-word">SeptemFest</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="./calendars.html">Calendar</a>
+      <a href="./products.html">Products</a>
+      <a class="active" href="./timeline.html">Timeline</a>
+      <a href="./landmark.html">Landmark</a>
+    </nav>
+  </header>
+
+  <main class="history-main">
+    <section class="timeline-section wrap" aria-label="Festival activity timeline">
+      <div class="timeline-heading">
+        <span class="mini-label">ACTIVITY TIMELINE</span>
+        <h2>How the festival unfolds.</h2>
+      </div>
+      <p class="timeline-progress" id="timelineProgress" aria-live="polite">01 / 05 UNLOCKED</p>
+      <div class="timeline" id="historyTimeline"></div>
+    </section>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Scroll back to top">
+      <span>↑</span>
+    </button>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>SeptemFest • Timeline</span>
+      <span>NEXUS • HOME TECH • TDB</span>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
